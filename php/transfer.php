@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/jsonRPCClient.php';
-	$jsonrpc_server = 'http://127.0.0.1:16191/json_rpc';
-  // $jsonrpc_server = 'http://usuario:contrasena@127.0.0.1:16191/json_rpc';
+	// $jsonrpc_server = 'http://127.0.0.1:16191/json_rpc';
+	$jsonrpc_server = 'http://usuario:contrasena@127.0.0.1:16191/json_rpc';
 	$jsonRPCclient_instancia = new jsonRPCClient($jsonrpc_server);
 
 $getheight = $jsonRPCclient_instancia -> get_height();
